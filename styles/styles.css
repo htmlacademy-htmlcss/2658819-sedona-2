@@ -1,0 +1,144 @@
+
+@font-face {
+  font-family: "PT SanTs" ;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.container {
+  width: 1200px;
+  height: 3557px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  background: #FFFFFF;
+}
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}*/
+
+.navigation-link {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-user-link{
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-user-selected-hotels {
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  background: #7DB54F;
+}
+
+.navigation-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  background: #756157;
+  text-transform: uppercase; text-decoration: none;
+  color: #FFFFFF;
+}
+
+.count-selected-hotels {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.hero {
+  background-image: url("../images/background/index_background_divider.jpg");
+  background-size: 1200px 485px; background-repeat: no-repeat;
+  }
+.advantages-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.advantages-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.advantages-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-item-description{
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantages-text {
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantages-dark {
+  background: rgba(131, 179, 211, 1);
+}
+.advantages-medium {
+  background: rgba(131, 179, 211, 0.2);
+}
+.advantages-light {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+
+
+
+
+
+
+
+
+
+
