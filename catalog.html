@@ -128,18 +128,21 @@
              <option value="expensive">Сначала дорогие</option>
            </select>
            <ul class="sorting-list">
-             <li class="sorting-item sorting-item-current">
-               <a href="catalog.html?view=tile" class="button-stroke-black">
+             <li class="sorting-item">
+               <a href="catalog.html?view=tile" class="sorting-link sorting-current">
+                 <div class="sorting-content"></div>
                  <span class="visually-hidden">Показать карточки</span>
                </a>
              </li>
              <li class="sorting-item">
-               <a href="catalog.html?view=card" class="button-stroke-grey">
+               <a href="catalog.html?view=card" class="sorting-link">
+                 <div class="sorting-content"></div>
                  <span class="visually-hidden">Галерея</span>
                </a>
              </li>
              <li class="sorting-item">
-               <a href="catalog.html?view=list" class="button-stroke-grey">
+               <a href="catalog.html?view=list" class="sorting-link">
+                 <div class="sorting-content"></div>
                  <span class="visually-hidden">Показать список</span>
                </a>
              </li>
@@ -153,12 +156,10 @@
              </a>
              <p class="product-card-group">Гостиница</p>
              <p class="product-card-price">От 4000 ₽</p>
-             <a class="show-more product-card-button button button-brown" href="#">подробнее</a>
+             <a class="product-card-button button button-brown" href="#">подробнее</a>
              <button class="product-card-button button button-blue" type="button">в избранное</button>
              <span class="hotel-stars">Категория отеля 4 звезды</span>
-             <div class="button-grey">
-               <p class="rating button-grey">Рейтинг: 8,5</p>
-             </div>
+             <p class="rating button-grey">Рейтинг: 8,5</p>
            </li>
            <li class="product-card">
              <a class="product-card-link" href="#">
@@ -167,12 +168,10 @@
              </a>
              <p class="product-card-group">Гостиница</p>
              <p class="product-card-price">От 5000 ₽</p>
-             <a class="show-more product-card-button button button-brown" href="#">подробнее</a>
+             <a class="product-card-button button button-brown" href="#">подробнее</a>
              <button class="product-card-button button button-green" type="button">в избранном</button>
              <span class="hotel-stars">Категория отеля 4 звезды</span>
-             <div class="button-grey">
-               <p class="rating button-grey">Рейтинг: 9,2</p>
-             </div>
+             <p class="rating button-grey">Рейтинг: 9,2</p>
            </li>
            <li class="product-card">
              <a class="product-card-link" href="#">
@@ -181,12 +180,10 @@
              </a>
              <p class="product-card-group">Гостиница</p>
              <p class="product-card-price">От 2500 ₽</p>
-             <a class="show-more product-card-button button button-brown" href="#">подробнее</a>
+             <a class="product-card-button button button-brown" href="#">подробнее</a>
              <button class="product-card-button button button-blue" type="button">в избранное</button>
              <span class="hotel-stars">Категория отеля 3 звезды</span>
-             <div class="button-grey">
-               <p class="rating button-grey">Рейтинг: 6,9</p>
-             </div>
+             <p class="rating button-grey">Рейтинг: 6,9</p>
            </li>
            <li class="product-card">
              <a class="product-card-link" href="#">
@@ -195,61 +192,59 @@
              </a>
              <p class="product-card-group">Гостиница</p>
              <p class="product-card-price">От 1500 ₽</p>
-             <a class="show-more product-card-button button button-brown" href="#">подробнее</a>
+             <a class="product-card-button button button-brown" href="#">подробнее</a>
              <button class="product-card-button button button-blue" type="button">в избранное</button>
              <span class="hotel-stars">Категория отеля 2 звезды</span>
-             <div class="button-grey">
-               <p class="rating ">Рейтинг: 5,0</p>
-             </div>
+             <p class="rating button-grey">Рейтинг: 5,0</p>
            </li>
          </ul>
-         <ul class="pagination">
+         <ul class="pagination-list">
            <li class="pagination-item">
-             <a class="pagination-current" href="catalog.html" aria-current="page">1</a>
+             <a class="pagination-current button button-large button-grey" href="catalog.html" aria-current="page">1</a>
            </li>
            <li class="pagination-item">
-             <a class="pagination-link button-blue" href="#">2</a>
+             <a class="pagination-link button button-large button-blue" href="#">2</a>
            </li>
            <li class="pagination-item">
-             <a class="pagination-link button-blue" href="#">3</a>
+             <a class="pagination-link button button-large button-blue" href="#">3</a>
            </li>
            <li class="pagination-item">
-             <a class="pagination-link button-blue" href="#">4</a>
+             <a class="pagination-link button button-large button-blue" href="#">4</a>
            </li>
            <li class="pagination-item">
-             <a class=" pagination-link-points" href="#">...</a>
+             <span class="ellipsis">...</span>
            </li>
            <li class="pagination-item">
-             <a class="pagination-link button-blue" href="#">10</a>
+             <a class="pagination-link button button-large button-blue" href="#">10</a>
            </li>
          </ul>
        </section>
-       <section class="subscription">
-         <h2 class="title">Подпишитесь на рассылку</h2>
-         <p class="description">Только полезная информация и никакого спама, честное бойскаутское</p>
+       <section class="subscription ">
+         <h2 class="title subscription-title">Подпишитесь на рассылку</h2>
+         <p class="description subscription-description">Только полезная информация и никакого спама, честное бойскаутское</p>
          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
            <label class="visually-hidden" for="subscription-form">Укажите Ваш e-mail</label>
            <input class="subscription-form-field" type="email" name="subscription-form" id="subscription-form" placeholder="Ваш e-mail" required>
-           <button class="subscription-button button button-blue" type="submit">Подписаться</button>
+           <button class="subscription-button button button-large button-blue" type="submit">Подписаться</button>
          </form>
        </section>
      </main>
      <footer class="page-footer">
        <section class="footer-social">
          <h2 class="visually-hidden">Сидона в социальных сетях</h2>
-         <ul class="footer-social-list">
-           <li class="footer-social-item">
-             <a class="button" href="https://vk.com/htmlacademy">
+         <ul class="social-list">
+           <li class="social-item">
+             <a class="social-link social-vk" href="https://vk.com/htmlacademy">
                <span class="visually-hidden">Vkontakte</span>
              </a>
            </li>
-           <li class="footer-social-item">
-             <a class="button" href="https://t.me/htmlacademy">
+           <li class="social-item">
+             <a class="social-link social-telegram" href="https://t.me/htmlacademy">
                <span class="visually-hidden">Telegram</span>
              </a>
            </li>
-           <li class="footer-social-item">
-             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+           <li class="social-item">
+             <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                <span class="visually-hidden">YouTube</span>
              </a>
            </li>

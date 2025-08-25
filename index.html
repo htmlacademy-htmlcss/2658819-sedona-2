@@ -47,8 +47,10 @@
           <img class="hero-welcome" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!.">
         </header>
         <section class="advantages">
-          <h2 class="title advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="description advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages-title-wrapper">
+            <h2 class="title advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="advantages-list">
             <li class="advantages-item advantages-dark">
               <div class="advantages-item-wrapper">
@@ -90,38 +92,41 @@
           </ul>
         </section>
         <section class="services">
-          <h2 class="title services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="description services-description">Опытный персонал и качественное обслуживание!</p>
+          <div class="services-title-wrapper">
+            <h2 class="title services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="description">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="services-list">
             <li class="services-item">
+              <div class="services-icon"></div>
               <h3 class="subtitle services-subtitle">Жильё</h3>
-              <p class="services-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="services-item-description">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="services-item">
+              <div class="services-icon"></div>
               <h3 class="subtitle services-subtitle">Еда</h3>
-              <p class="services-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="services-item-description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services-item">
+              <div class="services-icon"></div>
               <h3 class="subtitle services-subtitle">Сувениры</h3>
-              <p class="services-item-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="services-item-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
         <section class="booking">
           <h2 class="title booking-title">Заинтересовались?</h2>
-          <p class="description booking-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="booking-button button button-brown" type="button">Поиск гостиницы в Седоне</button>
+          <p class="description booking-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="booking-button button button-large button-brown" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscription subscription-background-img">
-          <div class="subscription-wrapper">
-            <h2 class="title subscription-title">Подпишитесь на рассылку</h2>
-            <p class="description subscription-description">Только полезная информация и никакого спама, честное бойскаутское</p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="subscription-form">Укажите Ваш e-mail</label>
-              <input class="subscription-form-field" type="email" name="subscription-form" id="subscription-form" placeholder="Ваш e-mail" required>
-              <button class="subscription-button button button-blue" type="submit">Подписаться</button>
-            </form>
-          </div>
+          <h2 class="title subscription-title title-wight">Подпишитесь на рассылку</h2>
+          <p class="description subscription-description title-wight">Только полезная информация и никакого спама, честное бойскаутское</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscription-form">Укажите Ваш e-mail</label>
+            <input class="subscription-form-field" type="email" name="subscription-form" id="subscription-form" placeholder="Ваш e-mail" required>
+            <button class="subscription-button button button-large button-blue" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
       <footer class="page-footer">
@@ -129,17 +134,17 @@
           <h2 class="visually-hidden">Сидона в социальных сетях</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="button-social" href="https://vk.com/htmlacademy">
+              <a class="social-link social-vk" href="!https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte</span>
               </a>
             </li>
             <li class="social-item">
-              <a class="button-social" href="https://t.me/htmlacademy">
+              <a class="social-link social-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="social-item">
-              <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
               </a>
             </li>
