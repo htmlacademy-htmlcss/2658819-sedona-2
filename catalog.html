@@ -110,7 +110,7 @@
                <div class="price-input-wrapper">
                  <label for="price-from">
                    <span class="price-label price-from">от</span>
-                   <input class="price-field" type="text" name="price-from" id="price-from" value="0" placeholder="от" required>
+                   <input class="price-field" type="number" name="price-from" id="price-from" value="0" placeholder="от" required>
                  </label>
                  <label for="price-to">
                    <span class="price-label price-to">до</span>
@@ -138,27 +138,26 @@
        <section class="search">
          <div class="search-wrapper">
            <h2 class="title search-title">Найдено гостиниц: 38</h2>
-           <select class="select-control" aria-label="Сортировка">
-             <option value="popular">Сначала популярные</option>
-             <option value="cheap">Сначала дешевые</option>
-             <option value="expensive">Сначала дорогие</option>
-           </select>
+           <div class= "select">
+             <select class="sorting-select" aria-label="Сортировка">
+               <option value="popular">Сначала популярные</option>
+               <option value="cheap">Сначала дешевые</option>
+               <option value="expensive">Сначала дорогие</option>
+             </select>
+           </div>
            <ul class="sorting-list">
              <li class="sorting-item">
                <a href="catalog.html?view=tile" class="sorting-link sorting-current">
-                 <div class="sorting-content"></div>
                  <span class="visually-hidden">Показать карточки</span>
                </a>
              </li>
              <li class="sorting-item">
                <a href="catalog.html?view=card" class="sorting-link">
-                 <div class="sorting-content"></div>
                  <span class="visually-hidden">Галерея</span>
                </a>
              </li>
              <li class="sorting-item">
                <a href="catalog.html?view=list" class="sorting-link">
-                 <div class="sorting-content"></div>
                  <span class="visually-hidden">Показать список</span>
                </a>
              </li>
@@ -175,7 +174,6 @@
              <a class="product-card-button button button-brown" href="#">подробнее</a>
              <button class="product-card-button button button-blue" type="button">в избранное</button>
              <div class="star star-4 star-5" role="img" aria-label="4 звезды">
-
                <span class="visually-hidden">Категория отеля</span>
              </div>
              <p class="rating button-grey">Рейтинг: 8,5</p>
@@ -249,7 +247,7 @@
          <p class="description subscription-description">Только полезная информация и никакого спама, честное бойскаутское</p>
          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
            <label class="visually-hidden" for="subscription-form">Укажите Ваш e-mail</label>
-           <input class="subscription-form-field" type="email" name="subscription-form" id="subscription-form" placeholder="Ваш e-mail" required>
+           <input class="subscription-form-field button-grey" type="email" name="subscription-form" id="subscription-form" placeholder="Ваш e-mail" required>
            <button class="subscription-button button button-large button-blue" type="submit">Подписаться</button>
          </form>
        </section>

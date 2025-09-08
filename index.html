@@ -158,6 +158,33 @@
           </a>
         </section>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button button button-grey" type="reset"><span class="visually-hidden">Закрыть</span></button>
+          <section class="modal-content">
+            <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="field-group-container">
+                <label class="field-label" for="check-in-date">Дата заезда:</label>
+                <input class="field field-date button-grey" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату" value="20 апреля 2020">
+                <p class="field-comment text-error">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <div class="field-group-container">
+                <label class="field-label" for="check-out-date">Дата выезда:</label>
+                <input class="field field-date button-grey" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023">
+                <p class="field-comment">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="field-group-number-container">
+                <label class="field-label" for="number-of-adults">Взрослые:</label>
+                <input class="field field-number button-grey" type="number" id="number-of-adults" name="number-of-adults" placeholder="0" value="2">
+                <label class="field-label" for="number-of-children">Дети:</label>
+                <input class="field field-number button-grey" type="number" id="number-of-children" name="number-of-children" placeholder="0" value="2">
+              </div>
+              <button class="button button-blue modal-search-button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
