@@ -160,7 +160,7 @@
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button button button-grey" type="reset"><span class="visually-hidden">Закрыть</span></button>
+          <button class="modal-close-button button button-grey" type="button"><span class="visually-hidden">Закрыть</span></button>
           <section class="modal-content">
             <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -176,9 +176,26 @@
               </div>
               <div class="field-group-number-container">
                 <label class="field-label" for="number-of-adults">Взрослые:</label>
-                <input class="field field-number button-grey" type="number" id="number-of-adults" name="number-of-adults" placeholder="0" value="2">
-                <label class="field-label" for="number-of-children">Дети:</label>
-                <input class="field field-number button-grey" type="number" id="number-of-children" name="number-of-children" placeholder="0" value="2">
+                <div class="button-minus-adults-wrapper button-grey">
+                  <span class="visually-hidden">Уменьшить количество взрослых</span>
+                  <button class="button-minus button button-grey" type="button"></button>
+                </div>
+                <input class="field-number button-grey" type="number" id="number-of-adults" name="number-of-adults" placeholder="0" value="2">
+                <div class="button-plus-adults-wrapper button-grey">
+                  <span class="visually-hidden">Увеличить количество взрослых</span>
+                  <button class="button-plus button button-grey" type="button"></button>
+                </div>
+                <label class="field-label" for="number-of-kids">Дети:</label>
+                <button class="field-info button" type="button"></button>
+                <div class="button-minus-kids-wrapper button-grey">
+                  <span class="visually-hidden">Уменьшить количество детей</span>
+                  <button class="button-minus button button-grey" type="button"></button>
+                </div>
+                <input class="field-number button-grey" type="number" id="number-of-kids" name="number-of-kids" placeholder="0" value="2">
+                <div class="button-plus-kids-wrapper button-grey">
+                  <span class="visually-hidden">Увеличить количество детей</span>
+                  <button class="button-plus button button-grey" type="button"></button>
+                </div>
               </div>
               <button class="button button-blue modal-search-button" type="submit">Найти</button>
             </form>
