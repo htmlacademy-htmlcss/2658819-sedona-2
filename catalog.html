@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link href="styles/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/icon/favicon.ico">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -17,7 +18,7 @@
              <a class="navigation-link" href="index.html">Главная</a>
            </li>
            <li class="navigation-item">
-             <a class="navigation-link" href="#">О седоне</a>
+             <a class="navigation-link" href="#">О Седоне</a>
            </li>
            <li class="navigation-item">
              <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
@@ -30,11 +31,9 @@
              </a>
            </li>
            <li class="navigation-user-item">
-             <a class="navigation-user-link" href="#">
-               <div class="navigation-user-selected-hotels">
-                 <span class="visually-hidden">Отелей в избранном:</span>
-                 <span class="count-selected-hotels">12</span>
-               </div>
+             <a class="navigation-user-link navigation-user-selected-hotels" href="#">
+               <span class="visually-hidden">Отелей в избранном:</span>
+               <span class="count-selected-hotels" data-text="12"></span>
              </a>
            </li>
          </ul>
@@ -140,8 +139,8 @@
            <h2 class="title search-title">Найдено гостиниц: 38</h2>
            <div class= "select">
              <select class="sorting-select" aria-label="Сортировка">
-               <option value="popular">Сначала популярные</option>
                <option value="cheap">Сначала дешевые</option>
+               <option value="popular">Сначала популярные</option>
                <option value="expensive">Сначала дорогие</option>
              </select>
            </div>
