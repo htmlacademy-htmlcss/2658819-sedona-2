@@ -152,12 +152,12 @@
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="field-group-container">
                 <label class="field-label" for="check-in-date">Дата заезда:</label>
-                <input class="field field-date button-grey" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020" aria-required="true">
+                <input class="field field-date button-grey" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020" required>
                 <p class="field-comment text-error">Мы не можем отправить вас в прошлое.</p>
               </div>
               <div class="field-group-container">
                 <label class="field-label" for="check-out-date">Дата выезда:</label>
-                <input class="field field-date button-grey" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023" aria-required="true">
+                <input class="field field-date button-grey" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023" required>
                 <p class="field-comment">На эти даты есть свободные номера. Пока есть.</p>
               </div>
               <div class="field-group-number-container">
@@ -165,10 +165,12 @@
                 <input class="field-number button-grey" type="number" id="number-of-adults" name="number-of-adults" placeholder="0" value="2">
                 <button class="button-minus button" type="button"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
                 <button class="button-plus button" type="button"> <span class="visually-hidden">Увеличить количество взрослых</span></button>
-                <label class="field-label" for="number-of-kids">Дети:</label>
-                <button class="toggle-info button" type="button" aria-labelledby="tooltip-label-date"></button>
-                <span class="tooltip">
-                   <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                <span class="field-label info-label">
+                  <label class="field-label" for="number-of-kids">Дети:</label>
+                  <span class="tooltip">
+                    <button class="toggle-info button" type="button" aria-labelledby="tooltip-label-date"></button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
                 </span>
                 <input class="field-number button-grey" type="number" id="number-of-kids" name="number-of-kids" placeholder="0" value="2">
                 <button class="button-minus button" type="button"> <span class="visually-hidden">Уменьшить количество детей</span></button>
