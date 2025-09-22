@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Наталья](https://up.htmlacademy.ru/htmlcss-individual/2/user/2658819).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Сайт: [Мой проект Сeдона](https://foxsiny.github.io/2658819-sedona-2/).
 
 ---
 
