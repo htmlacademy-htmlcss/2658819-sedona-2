@@ -691,7 +691,7 @@ body {
   color: #000000;
 }
 
-.developer-link:hover svg path {
+.developer-link:hover svg {
   fill: #756157;
 }
 
@@ -699,7 +699,7 @@ body {
   box-shadow: 0 0 0 2px #82B3D3;
 }
 
-.developer-link:focus svg path {
+.developer-link:focus svg {
   fill: #756157;
 }
 
